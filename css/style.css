@@ -1,0 +1,488 @@
+* {
+    box-sizing: border-box;
+    color: #1f373d;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.header {
+    height: 100px;
+}
+
+.toolbar {
+    margin-top: 10px;
+    display: flex;
+}
+
+.logo {
+    width: 120px;
+}
+
+.menu {
+    margin-left: auto;
+    display: flex;
+    text-align: center;
+}
+
+.menu-item {
+    margin-right: 50px;
+    text-align: center;
+}
+
+
+/* -------------------------Main------------------------- */
+
+.main {
+    margin-top: 10px;
+    background-image: url('../img/fusion-medical-animation-rnr8D3FNUNY-unsplash.jpg');
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1300px;
+    padding-top: 20px;
+    max-width: 100%;
+}
+
+.menu-icon {
+    width: 20px;
+    margin-left: auto;
+    margin-right: 10px;
+    display: none;
+}
+
+.middle {
+    background: rgba(240, 240, 240, 0.5);
+    margin-top: 10px;
+    padding-top: 40px;
+    text-align: center;
+    border: 2px solid rgb(148, 147, 147);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    max-height: 525px;
+    width: 970px;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 60px;
+    font-weight: 900;
+    font-family: 'Fredoka One', cursive;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #1f370d;
+    font-size: 25px;
+}
+
+h3 {
+    margin: 10px 10px;
+}
+
+#date {
+    font-size: 40px;
+    color: #5e5656;
+    font-weight: 800;
+}
+
+form input,
+form button {
+    width: 400px;
+    height: 50px;
+    border: 1px solid #ccc;
+    padding: 0 5px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+form button {
+    border-radius: 5px;
+    width: 80px;
+    background-color: #1f373d;
+    color: #fff;
+    transition: 0.7s;
+}
+
+form button:hover {
+    background-color: #ffcc01;
+    color: #1f373d;
+}
+
+#name-country {
+    font-weight: 900;
+    color: #1f373d;
+    margin-top: 25px;
+}
+
+.content {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.content .box {
+    min-width: 270px;
+    margin: 10px;
+    border: 0.2px solid #ccc;
+    padding: 15px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.content .box:hover {
+    background: #eee4;
+}
+
+.confirmed:hover {
+    border-top: 9px solid #ffcc01;
+}
+
+.recovered:hover {
+    border-top: 9px solid green;
+}
+
+.deaths:hover {
+    border-top: 9px solid crimson;
+}
+
+.content .box p {
+    text-transform: uppercase;
+    opacity: 0.9;
+    font-weight: 600;
+}
+
+.content .box h3 {
+    font-size: 40px;
+}
+
+.confirmed h3,
+.confirmed i {
+    color: #ffcc01;
+}
+
+.recovered h3,
+.recovered i {
+    color: green;
+}
+
+.deaths h3,
+.deaths i {
+    color: crimson;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.chart-block {
+    margin-top: 20px;
+    padding-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #1f370d;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+
+/* ----------------About------------------------- */
+
+.my-profile {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.my-profile span {
+    display: block;
+}
+
+.pic-profile {
+    object-fit: cover;
+    background-size: cover;
+    max-width: 200px;
+    margin-right: 10px;
+}
+
+.pic-profile-img {
+    border-radius: 10px;
+}
+
+.info-me {
+    max-width: 540px;
+    margin: 15px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.info-me h3 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.desc {
+    text-align: left;
+    line-height: 1.9;
+    letter-spacing: 1;
+}
+
+.info-me::after {
+    display: block;
+    margin-left: 160px;
+    margin-top: 50px;
+    content: "";
+    width: 100%;
+    background-color: #1f370d;
+    height: 3px;
+    margin-bottom: 20px;
+}
+
+.info-covid {
+    margin: 15px;
+    padding-bottom: 10px;
+    letter-spacing: 1;
+    max-width: 540px;
+}
+
+.about {
+    max-height: 1900px;
+}
+
+.modified {
+    height: 900px;
+}
+
+.connect-me {
+    background: #1f373d;
+    width: 140px;
+    height: 50px;
+    margin: 10px auto;
+    padding-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 1s;
+    outline: none;
+}
+
+.connect-link {
+    color: #fff;
+}
+
+.connect-me:hover {
+    background: #ffcc01;
+}
+
+.connect-link:hover {
+    color: #1f373d;
+}
+
+
+/* ----------------------Symptoms page------------------- */
+
+.title-covid {
+    margin-top: 10px;
+    line-height: 1.5;
+    letter-spacing: 1;
+    margin-left: 20px;
+    font-size: 20px;
+    text-align: left;
+}
+
+
+/* --------------Protective------------------- */
+
+.protective {
+    max-width: 100%;
+}
+
+
+/*-------------------------footer------------------------------- */
+
+.footer {
+    background: #1f373d;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 20px 20px;
+}
+
+.footer p {
+    color: #8a8a8a;
+}
+
+.footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-2 p {
+    font-size: 20px;
+}
+
+.footer-col-2 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-2 {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 img {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-col-4 {
+    flex-basis: 12%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.app-logo {
+    margin-top: 20px;
+}
+
+.app-logo img {
+    width: 140px;
+}
+
+.footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.coppyright {
+    text-align: center;
+}
+
+
+/* ----animation-------------------- */
+
+span:first-child {
+    animation: bop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
+}
+
+span:last-child {
+    animation: bopB 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
+}
+
+.title-animation {
+    animation: zoomin 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
+}
+
+@keyframes zoomin {
+    0% {
+        /* transform: scale(0.9); */
+        transform: rotate(5deg);
+        color: #ffcc01;
+    }
+    50%,
+    100% {
+        transform: scale(2deg);
+    }
+}
+
+@keyframes bop {
+    0% {
+        transform: scale(0.9);
+    }
+    50%,
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes bopB {
+    0% {
+        transform: scale(1);
+    }
+    80%,
+    100% {
+        transform: scale(1) rotateZ(2deg);
+    }
+}
+
+
+/* -----Reponsive-------------*/
+
+@media only screen and (max-width: 736px) {
+    /* For mobile phones: */
+    .middle {
+        max-width: 400px;
+        max-height: 900px;
+    }
+    form input {
+        width: 260px;
+    }
+    .chart-block {
+        margin: 5px;
+    }
+    .menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        padding-left: 5px;
+        font-size: 12px;
+        text-align: center;
+    }
+    .menu .menu-item {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .menu .menu-item a {
+        color: #fff;
+    }
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+    .about {
+        max-height: 100%;
+        max-width: 370px;
+    }
+    .protective {
+        padding-bottom: 10px;
+    }
+    .modified {
+        height: 1400px;
+    }
+    .chart-block {
+        margin-top: 50px;
+    }
+}

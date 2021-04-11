@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid 19 Statistics</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container toolbar">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo.png" alt="Logo">
+                </a>
+            </div>
+            <ul class="menu" id="MenuItems">
+                <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
+                <li class="menu-item"><a href="about.html" class="menu-link">About website</a></li>
+                <li class="menu-item"><a href="symptoms.html" class="menu-link">Symptoms</a></li>
+                <li class="menu-item"><a href="protective.html" class="menu-link">Protective  measures</a></li>
+            </ul>
+            <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </header>
+
+    <!-- ----------------------------Main---------------------------- -->
+    <main class="main">
+        <div class="container middle">
+            <h1 class="title-animation">Virus Corona</h1>
+            <h2>(Covid 19)</h2>
+            <h3 id="date">Date Time</h3>
+            <form action="" autocomplete="">
+                <input type="text" name="srch" id="srch" required list="countries" placeholder="Enter a name of country">
+                <datalist id="countries">
+                    <option value="World">World</option>
+                </datalist>
+                <button>Search</button>
+            </form>
+            <h2 id="name-country">The World</h2>
+            <div class="content">
+                <div class="box confirmed">
+                    <p>confirmed</p>
+                    <h3>0</h3>
+                    <i class="fa fa-long-arrow-up"> 0</i>
+                </div>
+                <div class="box deaths">
+                    <p>deaths</p>
+                    <h3>0</h3>
+                    <i class="fa fa-long-arrow-up">  0</i>
+                </div>
+                <div class="box recovered">
+                    <p>recovered</p>
+                    <h3>0</h3>
+                    <i class="fa fa-long-arrow-up"> 0</i>
+                </div>
+            </div>
+        </div>
+        <div class="container chart-block">
+            <span>Chart</span>
+            <div class="chart"></div>
+        </div>
+    </main>
+    <!-- -----------------------Footer------------------------- -->
+    <footer class="footer">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-2">
+                        <img src="img/logo.png">
+                        <p>
+                            Better to wear a mask than a ventilator; better to stay at home than in an ICU
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <p class="coppyright">© Coppyright 2020 - Nguyen Thanh Thanh Tu</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
